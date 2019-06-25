@@ -67,6 +67,7 @@
     <Compile Include="Helpers\EnumHelper.cs" />
     <Compile Include="Helpers\EnumHelpers.cs" />
     <Compile Include="Helpers\LocalizedDescriptionAttribute.cs" />
+    <Compile Include="Helpers\OperationResult.cs" />
     <Compile Include="Helpers\PersianDateTime.cs" />
     <Compile Include="Helpers\RequiredIfAttribute.cs" />
     <Compile Include="Helpers\ValidationHelpers.cs" />
