@@ -458,6 +458,18 @@ namespace SamDevs.Infrastructure.Helpers
             return ToDateTime(Parse(date));
         }
 
+        public static DateTime? ToNullableDateTime(string date)
+        {
+            try
+            {
+                return ToDateTime(Parse(date));
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
         public long Ticks => ToDateTime().Ticks;
 
         /// <summary>
