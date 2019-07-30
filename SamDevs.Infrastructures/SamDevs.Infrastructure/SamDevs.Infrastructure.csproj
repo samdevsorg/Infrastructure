@@ -57,6 +57,8 @@
   <ItemGroup>
     <Compile Include="Attributes\DisplayNameForClassAttribute.cs" />
     <Compile Include="Attributes\InputFormatAttribute.cs" />
+    <Compile Include="Enums\ImageType.cs" />
+    <Compile Include="Enums\MessageType.cs" />
     <Compile Include="ExceptionHandling\ExceptionExtension.cs" />
     <Compile Include="ExceptionHandling\ExceptionInfo.cs" />
     <Compile Include="Extensions\PersianExtension.cs" />
