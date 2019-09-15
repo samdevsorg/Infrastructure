@@ -1,15 +1,11 @@
-﻿using Newtonsoft.Json;
-using SamDevs.Infrastructure.Attributes;
+﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using SamDevs.InfrastructureCore.Attributes;
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Data.Common;
-using System.Data.Entity.Core;
-using System.Data.Entity.Infrastructure;
-using System.Data.Entity.ModelConfiguration;
-using System.Data.Entity.Validation;
-using System.Data.SqlClient;
 using System.IO;
 using System.Net;
 using System.Net.Http;
@@ -18,9 +14,8 @@ using System.Resources;
 using System.Runtime.InteropServices;
 using System.Security.Authentication;
 using System.Text;
-using System.Web;
-
-namespace SamDevs.Infrastructure.ExceptionHandling
+//TODO: Uncomment
+namespace SamDevs.InfrastructureCore.ExceptionHandling
 {
     public static class ExceptionExtension
     {
@@ -67,24 +62,24 @@ namespace SamDevs.Infrastructure.ExceptionHandling
             {
                 switch (ex.GetType().Name)
                 {
-                    case nameof(DbEntityValidationException): // Inherited from: DataException
-                        errors.AppendLine(GetMessage(ex as DbEntityValidationException));
-                        break;
+                    //case nameof(DbEntityValidationException): // Inherited from: DataException
+                    //    errors.AppendLine(GetMessage(ex as DbEntityValidationException));
+                    //    break;
                     case nameof(DBConcurrencyException):
                         errors.AppendLine(GetMessage(ex as DBConcurrencyException));
                         break;
-                    case nameof(SqlException): // Inherited from: DbException
-                        errors.AppendLine(GetMessage(ex as SqlException));
-                        break;
+                    //case nameof(SqlException): // Inherited from: DbException
+                    //    errors.AppendLine(GetMessage(ex as SqlException));
+                    //    break;
                     case nameof(DbException): // Inherited from: ExternalException
                         errors.AppendLine(GetMessage(ex as DbException));
                         break;
-                    case nameof(UpdateException): // Inherited from: DataException
-                        errors.AppendLine(GetMessage(ex as UpdateException));
-                        break;
-                    case nameof(DbUpdateException): // Inherited from: DataException
-                        errors.AppendLine(GetMessage(ex as DbUpdateException));
-                        break;
+                    //case nameof(UpdateException): // Inherited from: DataException
+                    //    errors.AppendLine(GetMessage(ex as UpdateException));
+                    //    break;
+                    //case nameof(DbUpdateException): // Inherited from: DataException
+                    //    errors.AppendLine(GetMessage(ex as DbUpdateException));
+                    //    break;
                     case nameof(DataException):
                         errors.AppendLine(GetMessage(ex as DataException));
                         break;
@@ -100,9 +95,9 @@ namespace SamDevs.Infrastructure.ExceptionHandling
                     case nameof(InvalidOperationException):
                         errors.AppendLine(GetMessage(ex as InvalidOperationException));
                         break;
-                    case nameof(HttpException): // Inherited from: ExternalException
-                        errors.AppendLine(GetMessage(ex as HttpException));
-                        break;
+                    //case nameof(HttpException): // Inherited from: ExternalException
+                    //    errors.AppendLine(GetMessage(ex as HttpException));
+                    //    break;
                     case nameof(SocketException): // Inherited from: Win32Exception
                         errors.AppendLine(GetMessage(ex as SocketException));
                         break;
@@ -115,9 +110,9 @@ namespace SamDevs.Infrastructure.ExceptionHandling
                     case nameof(HttpRequestException):
                         errors.AppendLine(GetMessage(ex as HttpRequestException));
                         break;
-                    case nameof(ModelValidationException):
-                        errors.AppendLine(GetMessage(ex as ModelValidationException));
-                        break;
+                    //case nameof(ModelValidationException):
+                    //    errors.AppendLine(GetMessage(ex as ModelValidationException));
+                    //    break;
                     default:
                         errors.AppendLine($"{ex.GetType().Name}: {ex.Message}");
                         break;
@@ -169,16 +164,16 @@ namespace SamDevs.Infrastructure.ExceptionHandling
             return errors.ToString();
         }
 
-        private static string GetMessage(ModelValidationException ex)
-        {
-            var errors = new StringBuilder();
-            errors.AppendLine();
-#if DEBUG
-            errors.AppendLine($"[{ex.GetType().Name}]");
-#endif
-            errors.AppendLine($"داده های ارسالی به ساختار داده ای نامعتبر می باشد");
-            return errors.ToString();
-        }
+//        private static string GetMessage(ModelValidationException ex)
+//        {
+//            var errors = new StringBuilder();
+//            errors.AppendLine();
+//#if DEBUG
+//            errors.AppendLine($"[{ex.GetType().Name}]");
+//#endif
+//            errors.AppendLine($"داده های ارسالی به ساختار داده ای نامعتبر می باشد");
+//            return errors.ToString();
+//        }
 
         private static string GetMessage(InvalidOperationException ex)
         {
@@ -197,27 +192,27 @@ namespace SamDevs.Infrastructure.ExceptionHandling
             return errors.ToString();
         }
 
-        private static string GetMessage(HttpException ex)
-        {
-            var errors = new StringBuilder();
-            errors.AppendLine();
-#if DEBUG
-            errors.AppendLine($"[{ex.GetType().Name}]");
-#endif
+//        private static string GetMessage(HttpException ex)
+//        {
+//            var errors = new StringBuilder();
+//            errors.AppendLine();
+//#if DEBUG
+//            errors.AppendLine($"[{ex.GetType().Name}]");
+//#endif
 
-            switch (ex.WebEventCode)
-            {
-                // Maximum request length exceeded
-                case 3004:
-                    errors.AppendLine("حجم درخواست از حداکثر طول مجاز تجاوز نموده است.");
-                    break;
-                default:
-                    errors.AppendLine($"{ex.WebEventCode}: {ex.Message}");
-                    break;
-            }
+//            switch (ex.WebEventCode)
+//            {
+//                // Maximum request length exceeded
+//                case 3004:
+//                    errors.AppendLine("حجم درخواست از حداکثر طول مجاز تجاوز نموده است.");
+//                    break;
+//                default:
+//                    errors.AppendLine($"{ex.WebEventCode}: {ex.Message}");
+//                    break;
+//            }
 
-            return errors.ToString();
-        }
+//            return errors.ToString();
+//        }
 
         private static string GetMessage(HttpRequestException ex)
         {
@@ -347,39 +342,39 @@ namespace SamDevs.Infrastructure.ExceptionHandling
             return errors.ToString();
         }
 
-        private static string GetMessage(DbEntityValidationException ex)
-        {
-            var errors = new StringBuilder();
-            errors.AppendLine();
-#if DEBUG
-            errors.AppendLine($"[{ex.GetType().Name}]");
-#endif
-            foreach (var error in ex.EntityValidationErrors)
-            {
-                var entity = error.Entry.Entity;
-                if (entity == null) continue;
-                var entityName = GetEntityName(entity);
-                errors.AppendLine($"{entityName}:");
-                errors.AppendLine();
-                foreach (var validation in error.ValidationErrors)
-                {
-                    var propertyName = validation.PropertyName;
-                    var entityType = error.Entry.Entity.GetType();
-                    var propInfo = entityType.GetProperty(propertyName);
-                    var attributes = propInfo?.GetCustomAttributes(typeof(DisplayAttribute), false);
-                    var displayAttribute = attributes?.Length > 0 ? attributes[0] as DisplayAttribute : null;
-                    propertyName = displayAttribute?.Name ?? propertyName;
-                    if (displayAttribute?.ResourceType != null)
-                    {
-                        var resourceManager = new ResourceManager(displayAttribute.ResourceType);
-                        propertyName = resourceManager.GetString(propertyName) ?? propertyName;
-                    }
-                    errors.AppendLine($"{propertyName}: {validation.ErrorMessage}");
-                }
-            }
-            return errors.ToString();
+//        private static string GetMessage(DbEntityValidationException ex)
+//        {
+//            var errors = new StringBuilder();
+//            errors.AppendLine();
+//#if DEBUG
+//            errors.AppendLine($"[{ex.GetType().Name}]");
+//#endif
+//            foreach (var error in ex.EntityValidationErrors)
+//            {
+//                var entity = error.Entry.Entity;
+//                if (entity == null) continue;
+//                var entityName = GetEntityName(entity);
+//                errors.AppendLine($"{entityName}:");
+//                errors.AppendLine();
+//                foreach (var validation in error.ValidationErrors)
+//                {
+//                    var propertyName = validation.PropertyName;
+//                    var entityType = error.Entry.Entity.GetType();
+//                    var propInfo = entityType.GetProperty(propertyName);
+//                    var attributes = propInfo?.GetCustomAttributes(typeof(DisplayAttribute), false);
+//                    var displayAttribute = attributes?.Length > 0 ? attributes[0] as DisplayAttribute : null;
+//                    propertyName = displayAttribute?.Name ?? propertyName;
+//                    if (displayAttribute?.ResourceType != null)
+//                    {
+//                        var resourceManager = new ResourceManager(displayAttribute.ResourceType);
+//                        propertyName = resourceManager.GetString(propertyName) ?? propertyName;
+//                    }
+//                    errors.AppendLine($"{propertyName}: {validation.ErrorMessage}");
+//                }
+//            }
+//            return errors.ToString();
 
-        }
+//        }
 
         private static string GetMessage(DBConcurrencyException ex)
         {

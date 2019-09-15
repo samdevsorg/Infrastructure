@@ -41,9 +41,6 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
-    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -58,6 +55,7 @@
     <Compile Include="Attributes\DisplayNameForClassAttribute.cs" />
     <Compile Include="Attributes\InputFormatAttribute.cs" />
     <Compile Include="Enums\ImageType.cs" />
+    <Compile Include="Enums\InputFormats.cs" />
     <Compile Include="Enums\MessageType.cs" />
     <Compile Include="ExceptionHandling\ExceptionExtension.cs" />
     <Compile Include="ExceptionHandling\ExceptionInfo.cs" />
@@ -67,9 +65,9 @@
     <Compile Include="Helpers\Base64Image.cs" />
     <Compile Include="Helpers\DateTimePlus.cs" />
     <Compile Include="Helpers\EnumHelper.cs" />
-    <Compile Include="Helpers\EnumHelpers.cs" />
     <Compile Include="Helpers\LocalizedDescriptionAttribute.cs" />
     <Compile Include="Helpers\OperationResult.cs" />
+    <Compile Include="Helpers\PathHelper.cs" />
     <Compile Include="Helpers\PersianDateTime.cs" />
     <Compile Include="Helpers\RequiredIfAttribute.cs" />
     <Compile Include="Helpers\ValidationHelpers.cs" />
@@ -89,5 +87,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

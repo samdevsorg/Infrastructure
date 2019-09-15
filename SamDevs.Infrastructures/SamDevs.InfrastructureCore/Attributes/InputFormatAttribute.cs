@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using SamDevs.Infrastructure.Enums;
-using SamDevs.Infrastructure.Extensions;
+using SamDevs.InfrastructureCore.Enums;
+using SamDevs.InfrastructureCore.Extensions;
 
-namespace SamDevs.Infrastructure.Attributes
+namespace SamDevs.InfrastructureCore.Attributes
 {
 
     [AttributeUsage(AttributeTargets.Property)]

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using SamDevs.Infrastructure.Enums;
+using SamDevs.InfrastructureCore.Enums;
 
-namespace SamDevs.Infrastructure.Extensions
+namespace SamDevs.InfrastructureCore.Extensions
 {
     public static class StringExtensions
     {

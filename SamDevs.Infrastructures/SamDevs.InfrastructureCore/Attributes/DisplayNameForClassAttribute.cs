@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Resources;
 
-namespace SamDevs.Infrastructure.Attributes
+namespace SamDevs.InfrastructureCore.Attributes
 {
     [AttributeUsage(AttributeTargets.Class, Inherited = false)]
     public class DisplayNameForClassAttribute : DisplayNameAttribute

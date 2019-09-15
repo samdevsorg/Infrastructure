@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 
-namespace SamDevs.Infrastructure.Helpers
+namespace SamDevs.InfrastructureCore.Helpers
 {
     public static class EnumHelper
     {

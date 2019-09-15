@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SamDevs.Infrastructure.ExceptionHandling
+namespace SamDevs.InfrastructureCore.ExceptionHandling
 {
     public class ExceptionInfo
     {
