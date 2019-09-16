@@ -49,7 +49,7 @@ namespace SamDevs.Infrastructure.Helpers
         {
             var enumList = new List<KeyValuePair<int, string>>();
 
-            if (enumValue.IsEnum)
+            if (!enumValue.IsEnum)
                 return enumList;
 
             var enumArray = Enum.GetValues(enumValue);
@@ -69,7 +69,7 @@ namespace SamDevs.Infrastructure.Helpers
         {
             var enumList = new List<KeyValuePair<byte, string>>();
 
-            if (enumValue.IsEnum)
+            if (!enumValue.IsEnum)
                 return enumList;
 
             var enumArray = Enum.GetValues(enumValue);
@@ -89,7 +89,7 @@ namespace SamDevs.Infrastructure.Helpers
         {
             var enumList = new List<EnumValueText>();
 
-            if (enumValue.IsEnum)
+            if (!enumValue.IsEnum)
                 return string.Empty;
 
             var enumArray = Enum.GetValues(enumValue);
@@ -109,7 +109,7 @@ namespace SamDevs.Infrastructure.Helpers
         {
             var enumList = new List<EnumValueText>();
 
-            if (enumValue.IsEnum)
+            if (!enumValue.IsEnum)
                 return string.Empty;
 
             var enumArray = Enum.GetValues(enumValue);
