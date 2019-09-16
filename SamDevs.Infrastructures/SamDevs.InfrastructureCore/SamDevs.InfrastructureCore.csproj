@@ -2,11 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <Version>1.0.0.4</Version>
+    <Version>1.0.0.5</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>ProSNY</Authors>
     <Company>SamDevs</Company>
     <Description>Some useful Utilities and Helpers</Description>
+    <AssemblyVersion>1.0.0.5</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

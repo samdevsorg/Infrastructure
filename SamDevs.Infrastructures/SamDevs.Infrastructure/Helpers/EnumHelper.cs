@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
+using Newtonsoft.Json;
 
 namespace SamDevs.Infrastructure.Helpers
 {
@@ -16,7 +17,6 @@ namespace SamDevs.Infrastructure.Helpers
                 return ((DescriptionAttribute)nAttributes.FirstOrDefault())?.Description;
             return eValue.ToString();
         }
-
         public static string DisplayName(this Enum value)
         {
             var enumType = value.GetType();
@@ -36,7 +36,16 @@ namespace SamDevs.Infrastructure.Helpers
             return outString;
         }
 
-        public static List<KeyValuePair<int, string>> GetCollection(this Type enumValue, int startIndex)
+        public static TAttribute GetAttribute<TAttribute>(this Enum enumValue)
+            where TAttribute : Attribute
+        {
+            return enumValue.GetType()
+                .GetMember(enumValue.ToString())
+                .First()
+                .GetCustomAttribute<TAttribute>();
+        }
+
+        public static List<KeyValuePair<int, string>> GetCollection(this Type enumValue, int startIndex = 0)
         {
             var enumList = new List<KeyValuePair<int, string>>();
 
@@ -56,9 +65,9 @@ namespace SamDevs.Infrastructure.Helpers
             return enumList;
         }
 
-        public static List<KeyValuePair<int, string>> GetCollection(this Type enumValue)
+        public static List<KeyValuePair<byte, string>> GetCollection(this Type enumValue, byte startIndex = 0)
         {
-            var enumList = new List<KeyValuePair<int, string>>();
+            var enumList = new List<KeyValuePair<byte, string>>();
 
             if (enumValue.IsEnum)
                 return enumList;
@@ -68,21 +77,67 @@ namespace SamDevs.Infrastructure.Helpers
 
             foreach (var value in enumArray)
             {
-                var key = (int)value;
-                enumList.Add(new KeyValuePair<int, string>(key, ((Enum)value).DisplayName()));
+                var key = (byte)value;
+                if (key >= startIndex)
+                    enumList.Add(new KeyValuePair<byte, string>(key, ((Enum)value).DisplayName()));
             }
 
             return enumList;
         }
 
-        public static TAttribute GetAttribute<TAttribute>(this Enum enumValue)
-            where TAttribute : Attribute
+        public static string GetSerializedCollection(this Type enumValue, int startIndex = 0)
         {
-            return enumValue.GetType()
-                .GetMember(enumValue.ToString())
-                .First()
-                .GetCustomAttribute<TAttribute>();
+            var enumList = new List<EnumValueText>();
+
+            if (enumValue.IsEnum)
+                return string.Empty;
+
+            var enumArray = Enum.GetValues(enumValue);
+            Array.Sort(enumArray);
+
+            foreach (var value in enumArray)
+            {
+                var key = (int)value;
+                if (key >= startIndex)
+                    enumList.Add(new EnumValueText(key.ToString(), ((Enum)value).DisplayName()));
+            }
+
+            return JsonConvert.SerializeObject(enumList);
         }
 
+        public static string GetSerializedCollection(this Type enumValue, byte startIndex = 0)
+        {
+            var enumList = new List<EnumValueText>();
+
+            if (enumValue.IsEnum)
+                return string.Empty;
+
+            var enumArray = Enum.GetValues(enumValue);
+            Array.Sort(enumArray);
+
+            foreach (var value in enumArray)
+            {
+                var key = (byte)value;
+                if (key >= startIndex)
+                    enumList.Add(new EnumValueText(key.ToString(), ((Enum)value).DisplayName()));
+            }
+
+            return JsonConvert.SerializeObject(enumList);
+        }
+
+        private class EnumValueText
+        {
+            public EnumValueText(string value, string text)
+            {
+                Value = value;
+                Text = text;
+            }
+
+            [JsonProperty("value")]
+            public string Value { get; set; }
+
+            [JsonProperty("text")]
+            public string Text { get; set; }
+        }
     }
 }
