@@ -30,7 +30,7 @@ namespace SamDevs.InfrastructureCore.Helpers
                 else
                 {
                     Data = data.Trim();
-                    MimeType = FileUtil.GetMimeType(".jpg");
+                    MimeType = FileUtility.GetMimeType(".jpg");
                     ImageType = ImageType.jpg;
                 }
 
@@ -58,7 +58,7 @@ namespace SamDevs.InfrastructureCore.Helpers
         public static Base64Image FromFile(string path)
         {
             var bytes = File.ReadAllBytes(path);
-            return $"data:{FileUtil.GetMimeType(Path.GetExtension(path))};base64, {Convert.ToBase64String(bytes)}";
+            return $"data:{FileUtility.GetMimeType(Path.GetExtension(path))};base64, {Convert.ToBase64String(bytes)}";
         }
     }
 }
