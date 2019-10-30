@@ -1,13 +1,334 @@
 <?xml version="1.0" encoding="utf-16"?>
-<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT0S" SolutionTotalViewTime="PT0S" SolutionTotalDebugTime="PT0S">
+<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT3M7.8928898S" SolutionTotalViewTime="PT32M54.0802858S" SolutionTotalDebugTime="PT0S">
   <FileVersion>
     <Major>1</Major>
     <Minor>0</Minor>
   </FileVersion>
-  <SolutionCreattionDate>0001-01-01T00:00:00</SolutionCreattionDate>
-  <ProjectsCreatedDateList />
+  <SolutionFolder>E:\SamDevs\Infrastructure\SamDevs.Infrastructures</SolutionFolder>
+  <SolutionCreattionDate>2019-10-26T13:54:22.5795805+03:30</SolutionCreattionDate>
+  <ProjectsCreatedDateList>
+    <ProjectCreated>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-06-18T11:14:32.6012468+04:30</CreatedDate>
+    </ProjectCreated>
+    <ProjectCreated>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-09-11T20:28:19.0918512+04:30</CreatedDate>
+    </ProjectCreated>
+  </ProjectsCreatedDateList>
   <SessionTimeList />
-  <LastSessionTimeList />
-  <TotalTimeList />
-  <HistoryTimeList />
+  <LastSessionTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT1M19.636797S" EditActiveTime="PT2M5.6566593S">
+      <ModifiedDate>2019-10-27T21:40:55.1605594+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Helpers\EnumHelper.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-27T21:32:41.604082+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT20M31.0365668S" EditActiveTime="PT14.794939S">
+      <ModifiedDate>2019-10-27T21:41:39.5603855+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\ExceptionHandling\ExceptionExtension.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-27T21:41:07.9833262+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT38.1646072S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ProSNY\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\5A91243F-035E-458D-A6E6-50D892676D08\57\1ff6b5e6\JsonConverter.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-10-27T21:39:50.4383764+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6.2154975S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ProSNY\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\5A91243F-035E-458D-A6E6-50D892676D08\e9\659ceed6\JsonProperty.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-10-27T21:33:30.4512937+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+  </LastSessionTimeList>
+  <TotalTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT5.3158449S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Helpers\EnumHelper.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-26T13:54:22.6085239+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M20.7109635S" EditActiveTime="PT2M5.6566593S">
+      <ModifiedDate>2019-10-27T21:40:55.1605594+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Helpers\EnumHelper.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:05.6120801+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT20M31.0365668S" EditActiveTime="PT14.794939S">
+      <ModifiedDate>2019-10-27T21:41:39.5603855+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\ExceptionHandling\ExceptionExtension.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-27T21:41:07.9833262+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT19.1864767S" EditActiveTime="PT1.1462971S">
+      <ModifiedDate>2019-10-26T14:05:10.139272+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Utilities\FileUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:10.7682419+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT25.518641S" EditActiveTime="PT1.2743617S">
+      <ModifiedDate>2019-10-26T14:05:32.1625173+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\FileUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:57.6401511+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT31.6372822S" EditActiveTime="PT4.3831211S">
+      <ModifiedDate>2019-10-26T14:04:26.8591327+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Utilities\HashUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:11.6051866+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT11.0879074S" EditActiveTime="PT2.4107707S">
+      <ModifiedDate>2019-10-26T14:05:48.8012255+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\HashUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:58.2632001+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT38.1646072S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ProSNY\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\5A91243F-035E-458D-A6E6-50D892676D08\57\1ff6b5e6\JsonConverter.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-10-27T21:39:50.4383764+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6.2154975S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ProSNY\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\5A91243F-035E-458D-A6E6-50D892676D08\e9\659ceed6\JsonProperty.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-10-27T21:33:30.4512937+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M29.6591494S" EditActiveTime="PT8.4891548S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\PasswordUtil.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-26T13:54:27.9273299+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M53.92024S" EditActiveTime="PT27.4337491S">
+      <ModifiedDate>2019-10-26T14:06:59.0462157+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\PasswordUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:03:18.692161+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M21.6271092S" EditActiveTime="PT2.303837S">
+      <ModifiedDate>2019-10-26T14:07:06.3828955+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Utilities\PasswordUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:12.5107563+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+  </TotalTimeList>
+  <HistoryTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT20M31.0365668S" EditActiveTime="PT14.794939S">
+      <ModifiedDate>2019-10-27T21:41:39.5603855+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\ExceptionHandling\ExceptionExtension.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-27T21:41:07.9833262+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT38.1646072S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ProSNY\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\5A91243F-035E-458D-A6E6-50D892676D08\57\1ff6b5e6\JsonConverter.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-10-27T21:39:50.4383764+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6.2154975S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ProSNY\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\5A91243F-035E-458D-A6E6-50D892676D08\e9\659ceed6\JsonProperty.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-10-27T21:33:30.4512937+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M19.636797S" EditActiveTime="PT2M5.6566593S">
+      <ModifiedDate>2019-10-27T21:40:55.1605594+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Helpers\EnumHelper.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-27T21:32:41.604082+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT11.0879074S" EditActiveTime="PT2.4107707S">
+      <ModifiedDate>2019-10-26T14:05:48.8012255+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\HashUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:58.2632001+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT25.518641S" EditActiveTime="PT1.2743617S">
+      <ModifiedDate>2019-10-26T14:05:32.1625173+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\FileUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:57.6401511+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M21.6271092S" EditActiveTime="PT2.303837S">
+      <ModifiedDate>2019-10-26T14:07:06.3828955+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Utilities\PasswordUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:12.5107563+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT31.6372822S" EditActiveTime="PT4.3831211S">
+      <ModifiedDate>2019-10-26T14:04:26.8591327+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Utilities\HashUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:11.6051866+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT19.1864767S" EditActiveTime="PT1.1462971S">
+      <ModifiedDate>2019-10-26T14:05:10.139272+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Utilities\FileUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:10.7682419+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1.0741665S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Helpers\EnumHelper.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:04:05.6120801+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M53.9212295S" EditActiveTime="PT27.4337491S">
+      <ModifiedDate>2019-10-26T14:06:59.0462157+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\PasswordUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-26T14:03:18.692161+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M29.6591494S" EditActiveTime="PT8.4891548S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\PasswordUtil.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-26T13:54:27.9273299+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5.3158449S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Helpers\EnumHelper.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-26T13:54:22.6085239+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+  </HistoryTimeList>
 </DevTrackerData>

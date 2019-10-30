@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 using SamDevs.InfrastructureCore.Attributes;
 using System;
 using System.ComponentModel;
@@ -14,6 +13,8 @@ using System.Resources;
 using System.Runtime.InteropServices;
 using System.Security.Authentication;
 using System.Text;
+using System.Text.Json;
+
 //TODO: Uncomment
 namespace SamDevs.InfrastructureCore.ExceptionHandling
 {
@@ -134,7 +135,7 @@ namespace SamDevs.InfrastructureCore.ExceptionHandling
                     _errorFile = new StreamWriter(_fs, Encoding.UTF8);
                 }
                 info.Message = errors.ToString();
-                _errorFile.WriteLine(JsonConvert.SerializeObject(info));
+                _errorFile.WriteLine(JsonSerializer.Serialize(info));
                 _errorFile.Flush();
                 _errorFile.Close();
                 _fs.Close();

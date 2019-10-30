@@ -4,7 +4,8 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
-using Newtonsoft.Json;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace SamDevs.InfrastructureCore.Helpers
 {
@@ -102,7 +103,7 @@ namespace SamDevs.InfrastructureCore.Helpers
                     enumList.Add(new EnumValueText(key.ToString(), ((Enum)value).DisplayName()));
             }
 
-            return JsonConvert.SerializeObject(enumList);
+            return JsonSerializer.Serialize(enumList);
         }
 
         public static string GetSerializedCollection(this Type enumValue, byte startIndex = 0)
@@ -122,7 +123,7 @@ namespace SamDevs.InfrastructureCore.Helpers
                     enumList.Add(new EnumValueText(key.ToString(), ((Enum)value).DisplayName()));
             }
 
-            return JsonConvert.SerializeObject(enumList);
+            return JsonSerializer.Serialize(enumList);
         }
 
         private class EnumValueText
@@ -133,10 +134,10 @@ namespace SamDevs.InfrastructureCore.Helpers
                 Text = text;
             }
 
-            [JsonProperty("value")]
+            [JsonPropertyName("value")]
             public string Value { get; set; }
 
-            [JsonProperty("text")]
+            [JsonPropertyName("text")]
             public string Text { get; set; }
         }
     }
