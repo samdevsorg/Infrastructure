@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Web;
 using SamDevs.Infrastructure.Enums;
 using SamDevs.Infrastructure.Utilities;
 
@@ -13,7 +14,7 @@ namespace SamDevs.Infrastructure.Helpers
         public string MimeType { get; }
         public long Size { get; }
         public ImageType ImageType { get; set; }
-        public Base64Image(string data)
+        public Base64Image(string data, long? fileSize = null)
         {
             if (!string.IsNullOrEmpty(data))
             {
@@ -34,7 +35,7 @@ namespace SamDevs.Infrastructure.Helpers
                     ImageType = ImageType.jpg;
                 }
 
-                Size = data.Length;
+                Size = fileSize ?? data.Length;
             }
 
         }
@@ -43,6 +44,22 @@ namespace SamDevs.Infrastructure.Helpers
         {
             var image = new Base64Image(input);
             return image;
+        }
+
+        public static implicit operator Base64Image(HttpPostedFileBase file)
+        {
+            if (file != null && file.ContentLength > 0)
+            {
+                byte[] thePictureAsBytes;
+                var contentLength = file.ContentLength;
+                using (var theReader = new BinaryReader(file.InputStream))
+                {
+                    thePictureAsBytes = theReader.ReadBytes(file.ContentLength);
+                }
+                return new Base64Image(Convert.ToBase64String(thePictureAsBytes), contentLength);
+            }
+
+            return null;
         }
 
         public override string ToString()

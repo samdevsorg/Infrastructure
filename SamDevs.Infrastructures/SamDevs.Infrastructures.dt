@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-16"?>
-<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT3M7.8928898S" SolutionTotalViewTime="PT32M54.0802858S" SolutionTotalDebugTime="PT0S">
+<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT6M11.0910352S" SolutionTotalViewTime="PT38M31.2057148S" SolutionTotalDebugTime="PT0S">
   <FileVersion>
     <Major>1</Major>
     <Minor>0</Minor>
@@ -18,46 +18,26 @@
   </ProjectsCreatedDateList>
   <SessionTimeList />
   <LastSessionTimeList>
-    <DevTrackerDataItem ViewActiveTime="PT1M19.636797S" EditActiveTime="PT2M5.6566593S">
-      <ModifiedDate>2019-10-27T21:40:55.1605594+03:30</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT3M55.0025597S" EditActiveTime="PT3M1.588261S">
+      <ModifiedDate>2019-10-30T11:30:54.2532357+03:30</ModifiedDate>
       <ModifiedBy>ProSNY</ModifiedBy>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Helpers\EnumHelper.cs</Item>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\TripleDesUtility.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
-      <CreatedDate>2019-10-27T21:32:41.604082+03:30</CreatedDate>
+      <CreatedDate>2019-10-30T11:25:30.9702196+03:30</CreatedDate>
       <ViewedBy>ProSNY</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT20M31.0365668S" EditActiveTime="PT14.794939S">
-      <ModifiedDate>2019-10-27T21:41:39.5603855+03:30</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT1M42.1318413S" EditActiveTime="PT1.6088866S">
+      <ModifiedDate>2019-10-30T11:32:50.6370873+03:30</ModifiedDate>
       <ModifiedBy>ProSNY</ModifiedBy>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\ExceptionHandling\ExceptionExtension.cs</Item>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Utilities\TripleDesUtility.cs</Item>
       <ItemType>ProjectItem</ItemType>
-      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
-      <CreatedDate>2019-10-27T21:41:07.9833262+03:30</CreatedDate>
-      <ViewedBy>ProSNY</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT38.1646072S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\ProSNY\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\5A91243F-035E-458D-A6E6-50D892676D08\57\1ff6b5e6\JsonConverter.cs</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName />
-      <CreatedDate>2019-10-27T21:39:50.4383764+03:30</CreatedDate>
-      <ViewedBy>ProSNY</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT6.2154975S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>C:\Users\ProSNY\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\5A91243F-035E-458D-A6E6-50D892676D08\e9\659ceed6\JsonProperty.cs</Item>
-      <ItemType>ProjectItem</ItemType>
-      <ProjectName />
-      <CreatedDate>2019-10-27T21:33:30.4512937+03:30</CreatedDate>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-30T11:32:33.4733249+03:30</CreatedDate>
       <ViewedBy>ProSNY</ViewedBy>
     </DevTrackerDataItem>
   </LastSessionTimeList>
@@ -190,8 +170,52 @@
       <CreatedDate>2019-10-26T14:04:12.5107563+03:30</CreatedDate>
       <ViewedBy>ProSNY</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M55.0025597S" EditActiveTime="PT3M1.588261S">
+      <ModifiedDate>2019-10-30T11:30:54.2532357+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\TripleDesUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-30T11:25:30.9702196+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M42.1248591S" EditActiveTime="PT1.6088866S">
+      <ModifiedDate>2019-10-30T11:32:50.6370873+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Utilities\TripleDesUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-30T11:32:33.4733249+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
   </TotalTimeList>
   <HistoryTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT1M42.1248591S" EditActiveTime="PT1.6088866S">
+      <ModifiedDate>2019-10-30T11:32:50.6370873+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\Utilities\TripleDesUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.Infrastructure\SamDevs.Infrastructure.csproj</ProjectName>
+      <CreatedDate>2019-10-30T11:32:33.4733249+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M55.0025597S" EditActiveTime="PT3M1.588261S">
+      <ModifiedDate>2019-10-30T11:30:54.2532357+03:30</ModifiedDate>
+      <ModifiedBy>ProSNY</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\Utilities\TripleDesUtility.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>E:\SamDevs\Infrastructure\SamDevs.Infrastructures\SamDevs.InfrastructureCore\SamDevs.InfrastructureCore.csproj</ProjectName>
+      <CreatedDate>2019-10-30T11:25:30.9702196+03:30</CreatedDate>
+      <ViewedBy>ProSNY</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT20M31.0365668S" EditActiveTime="PT14.794939S">
       <ModifiedDate>2019-10-27T21:41:39.5603855+03:30</ModifiedDate>
       <ModifiedBy>ProSNY</ModifiedBy>

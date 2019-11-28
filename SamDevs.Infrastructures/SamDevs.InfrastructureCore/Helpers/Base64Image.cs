@@ -45,6 +45,21 @@ namespace SamDevs.InfrastructureCore.Helpers
             return image;
         }
 
+        //public static implicit operator Base64Image(IFormFile file)
+        //{
+        //    if (file != null && file.ContentLength > 0)
+        //    {
+        //        byte[] thePictureAsBytes;
+        //        var contentLength = file.ContentLength;
+        //        using (var theReader = new BinaryReader(file.InputStream))
+        //        {
+        //            thePictureAsBytes = theReader.ReadBytes(file.ContentLength);
+        //        }
+        //        return new Base64Image(Convert.ToBase64String(thePictureAsBytes), contentLength);
+        //    }
+
+        //    return null;
+        //}
         public override string ToString()
         {
             return Data;
