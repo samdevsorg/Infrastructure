@@ -877,6 +877,14 @@ namespace SamDevs.InfrastructureCore.Helpers
             return Hour.ToString().PadLeft(2, '0') + ":" + Minute.ToString().PadLeft(2, '0');
         }
 
+        public static PersianDateTime Yesterday => Today.AddDays(-1);
 
+
+        public PersianDateTime FirstDateOfYear => new PersianDateTime(Year, 1, 1);
+        public PersianDateTime LastDateOfYear => new PersianDateTime(Year, 12, DaysInMonth(Year, 12), 23, 59, 59);
+        public PersianDateTime FirstDateOfMonth => new PersianDateTime(Year, Month, 1);
+        public PersianDateTime LastDateOfMonth => new PersianDateTime(Year, Month, DaysInMonth(Year, Month), 23, 59, 59);
+        public PersianDateTime FirstDateOfWeek => Today.AddDays(-DayOfWeek + 1);
+        public PersianDateTime LastDateOfWeek => Today.AddDays(7 - DayOfWeek);
     }
 }
