@@ -1,6 +1,5 @@
-﻿using System;
+﻿using SamDevs.Infrastructure.Enums;
 using System.Text.RegularExpressions;
-using SamDevs.Infrastructure.Enums;
 
 namespace SamDevs.Infrastructure.Extensions
 {
@@ -8,6 +7,8 @@ namespace SamDevs.Infrastructure.Extensions
     {
         public static string GetDirection(this string input)
         {
+            if (string.IsNullOrWhiteSpace(input))
+                return input;
             input = input.StripHtml();
             var firstChar = Regex.Match(input, @"[\p{L}]").Value;
             return firstChar.Length > 0 && firstChar[0].IsRtlLetter() ? "rtl" : "ltr";
@@ -15,10 +16,12 @@ namespace SamDevs.Infrastructure.Extensions
 
         public static string StripHtml(this string htmlString)
         {
-            if (String.IsNullOrEmpty(htmlString)) return htmlString;
+            if (string.IsNullOrEmpty(htmlString))
+                return htmlString;
             htmlString = Regex.Replace(htmlString, @"<[^>]*(>|$)", "");
             return Regex.Replace(htmlString, @"[\n\r]+", " ");
         }
+
         public static string SafeSubstring(this string str, int start, int maxLength, bool useEllipsis = false)
         {
             if (string.IsNullOrEmpty(str)) return str;
@@ -26,13 +29,13 @@ namespace SamDevs.Infrastructure.Extensions
                 return str.Substring(start);
             return str.Substring(start, maxLength) + (useEllipsis ? "..." : "");
         }
+
         public static string ToDashedUrl(this string str)
         {
             if (string.IsNullOrEmpty(str)) return str;
-
-            str = Regex.Replace(str, @"[""\.\?\^\{\}\|\[\]\(\)\*\+\$\\_~:/#@!&',;=%<> ؟]", "-", RegexOptions.IgnoreCase);
-            while (str.Contains("--"))
-                str = str.Replace("--", "-");
+            str = Regex.Replace(str, @"[\p{Mn}]", "");
+            str = Regex.Replace(str, @"[^\p{L}\p{Nd}]", "-");
+            str = Regex.Replace(str, "-{2,}", "-");
             return str.Trim('-');
         }
 
